@@ -18,18 +18,22 @@ const App = () => {
                     content="Nice blog post!"
                 />
             </ApprovalCard>
-            <CommentDetail
-                author={faker.name.firstName()}
-                avatar={faker.image.avatar()}
-                timeAgo="Today at 2:01PM"
-                content="You've made my day"
-            />
-            <CommentDetail
-                author={faker.name.firstName()}
-                avatar={faker.image.avatar()}
-                timeAgo="Today at 9:32AM"
-                content="Fair enough"
-            />
+            <ApprovalCard>
+                <CommentDetail
+                    author={faker.name.firstName()}
+                    avatar={faker.image.avatar()}
+                    timeAgo="Today at 2:01PM"
+                    content="You've made my day"
+                />
+            </ApprovalCard>
+            <ApprovalCard>
+                <CommentDetail
+                    author={faker.name.firstName()}
+                    avatar={faker.image.avatar()}
+                    timeAgo="Today at 9:32AM"
+                    content="Fair enough"
+                />
+            </ApprovalCard>
         </div>
     )
 };
