@@ -5,9 +5,12 @@ import faker from 'faker';
 import CommentDetail from './CommentDetail';
 // relative path. "./" --> same folder
 
+import ApprovalCard from './ApprovalCard';
+
 const App = () => {
     return (
         <div className="ui container comments">
+            <ApprovalCard/>
             <CommentDetail
                 author={faker.name.firstName()}
                 avatar={faker.image.avatar()}
