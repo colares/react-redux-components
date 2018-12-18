@@ -1,7 +1,4 @@
 import React from 'react';
-import faker from "faker";
-// import only works for the file where it is placed in
-// the nested components / files should import again
 
 const CommentDetail = props => {
     return (
