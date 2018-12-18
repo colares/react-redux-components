@@ -8,14 +8,29 @@ import CommentDetail from './CommentDetail';
 const App = () => {
     return (
         <div className="ui container comments">
-            <CommentDetail author={faker.name.firstName()} timeAgo="Today at 4:45PM" />
-            <CommentDetail author={faker.name.firstName()} timeAgo="Today at 2:01PM" />
-            <CommentDetail author={faker.name.firstName()} timeAgo="Today at 9:32AM" />
+            <CommentDetail
+                author={faker.name.firstName()}
+                avatar={faker.image.avatar()}
+                timeAgo="Today at 4:45PM"
+                content="Nice blog post!"
+            />
+            <CommentDetail
+                author={faker.name.firstName()}
+                avatar={faker.image.avatar()}
+                timeAgo="Today at 2:01PM"
+                content="You've made my day"
+            />
+            <CommentDetail
+                author={faker.name.firstName()}
+                avatar={faker.image.avatar()}
+                timeAgo="Today at 9:32AM"
+                content="Fair enough"
+            />
         </div>
     )
 };
 
 ReactDOM.render(
-    <App />,
+    <App/>,
     document.querySelector('#root')
 );
